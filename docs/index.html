@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/identidade podcast/favicon-32x32.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body" id="body">
+    
+    <section class="animation">
+        <img src="./img/animacao/004.png" alt="" id="stars">
+        <img src="./img/animacao/003.png" alt="" id="moon">
+        <img src="./img/animacao/002.png" alt="" id="montain">
+        <h1 id="text">Os quatro cantos</h1>
+        <a href="home.html" id="btn">Entrar</a>
+        <img src="./img/animacao/001.png" alt="" id="montain-front">
+    </section>
+
+
+    <script src="./js/anime.min.js"></script>
+    <script>
+        let animation = anime.timeline({
+            autoplay: true
+        });
+
+        animation 
+    
+    
+         .add({
+             targets: '#stars',
+             top: '0px',
+             duration: 1000,
+             easing: 'easeInOutSine'
+         })
+         .add({
+             targets: '#montain',
+             top: '100px',
+             duration: 1000,
+             easing: 'easeInOutSine'
+         })
+         .add({
+             targets: '#moon',
+             top: '0px',
+             duration: 1000,
+             easing: 'easeInOutSine'
+         })
+         .add({
+             targets: '#montain-front',
+             top: '100px',
+             duration: 1000,
+             easing: 'easeInOutSine'
+         })
+         .add({
+             targets: '#text',
+             top:'30px',
+             marginRight: '0px',
+             duration: 1000,
+             easing: 'easeInOutSine'
+         })
+         .add({
+             targets: '#btn',
+             marginLeft: '0px',
+             marginTop: '80px',
+             duration: 500,
+             easing: 'easeInOutSine'
+         })
+      
+       
+    </script>
+</body>
+</html>
