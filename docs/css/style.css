@@ -1,7 +1,7 @@
 
 @import url('../fontes/chinese\ rocks\ rg.ttf');
-@import url('../fontes/LATO-LIGHT.TTF');
-@import url('../fontes/LATO-SEMIBOLD.TTF');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ body {
     --cor05:#1d784d;
     --cor06:#2ba841;
     --fontDestaque: 'Chinese Rocks';
-    --fontPadrao: 'Lato', 'Lato Light';
+    --fontPadrao: 'Lato', sans-serif;
 }
 .container{
   max-width: 1240px;
